@@ -3,116 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>JR Ermi</title>
+    <style>
+        body{
+            position: relative;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 2px 0 0 0;
+            overflow: hidden;
+        }
+        .row .col-sm-2{
+            padding-left: 20px;
+        }
+        .nav{
+            padding-left: 20px;
+            padding-top: 40px;
+            list-style: none;
+            }
+        img{
+            object-fit: cover;
+            }
+        ul li a {
+            
+            color: rgb(148, 145, 145);
+        }
+        ul{
+            list-style: none;
+        }
+        ul li a:hover{
+            color: #e7971f;
+            background: #ffffff;
+            display: inline-block;
+            font-family: source-sans-pro, sans-serif;
+            font-size: 15px;
+            line-height: 1.7;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: normal;
+            cursor: pointer;
+        }  
+        .row .col-sm-10{
+                flex: 20%; /*beacuuse there are 5 columns*/
+                width: auto;
+                overflow: hidden;
+                padding: 0px 2px 4px 30px;
+                height: 100%;
+                position: relative;
+                margin-bottom: 1%;
+        }        
+        h1{
+                position: relative;
+                font: inherit;
+            }
+            p{
+                position: sticky; 
+                padding: 150px 0;
+                font-weight: 100;
+
+            }
+            .row .col-sm-10 img{
+                height: 245.99px;
+                cursor: pointer;
+                filter: grayscale(0.5) brightness(0.5);
+                border-radius: 5px;
+                transition: 0.3s linear; 
+                width: 245.99px;
+                padding: 2px 2px 0 0;
+           }
+        
+           .row .col-sm-10 img:hover{
+                filter: grayscale(0) brightness(1);
+            }
+            @media only screen and (max-width: 800px){
+                row.col-sm-10{
+                    flex: 50%;
+                }
+               
+            }
+            @media only screen and (max-width: 680px){
+                row.col-sm-10{
+                    flex: 100%;
+                }
+                .row .col-sm-10 img{
+               
+                filter: grayscale(0) brightness(0.5);
+                }
+            }
+
+    </style>
 </head>
 <body>
-    <table cellspacing = 20>
-       <tr>
-           <td>
-               <h1>JrErmi</h1>
-            <ul>
-                <li><a href="index.html">OverView</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html"> Contact</a></li>
-                <li><a href="Hobbies.html"> Hobbies</a></li>
-                <li><a href="photography.html"> photography</a></li>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div>
+                    <img src="assets\images\junior ermi.PNG" alt="Ermias name">
+                    </div>
                 
-            </ul>
-           </td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><h1>Sports</h1></td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-           <td><img src="assets\images\messi.jfif" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp; </td>
-           <td><img src="assets\images\images.jfif" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp; </td>
-           <td><img src="assets\images\patrick-mahomes-083117-usnews-getty-ftr_e9qjkp9lbj7q1jgd4wdw7jq0r.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-           <td><img src="assets\images\boxing.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td> 
-           <td><img src="assets\images\skate.jfif" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        </tr>
-   </table>
-   <table>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><h1>Movies</h1></td>
-        </tr>
-       <tr>
-        <td>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </td>
-           <td><img src="assets\images\How_I_Met_Your_Mother_S9.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-           <td><img src="assets\images\245778_Vow_2012_1400x2100_eng UV.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp; </td>
-           <td><img src="assets\images\2ndhalfman.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-           <td><img src="assets\images\download (1).jfif" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-           <td><img src="assets\images\download (2).jfif" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td> 
-       </tr>
-    </table>
-    <table>
-       <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            
-            <td><h1>Music</h1></td>
-        </tr>
-       <tr>
-        <td>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </td>
-        <td><img src="assets\images\passenger-let-her-go.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td><img src="assets\images\hqdefault.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp; </td>
-        <td><img src="assets\images\220px-Kendrick_Lamar_-_Damn.png" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td><img src="assets\images\kina.jfif" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td><img src="assets\images\maxresdefault.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td> 
-       </tr>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="index.html">OverView</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Hobbies.html"> Hobbies</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a href="photography.html"> Photography</a>  
+                        </li>
+                        <li class="nav-item">
+                        <a href="about.html">About</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html"> Contact</a>
 
-    </table>
-    <table>
-        <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             
-             <td><h1>Books</h1></td>
-         </tr>
-        <tr>
-            <td>Copyright © Ermias Asmare; All rights reserved. </td>
-         <td>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         </td>
-         <td><img src="assets\images\images (1).jfif" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-         <td><img src="assets\images\the_alchemist.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp; </td>
-         <td><img src="assets\images\D6Q_7tdXkAIh7t7.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-         <td><img src="assets\images\admad bashager.jpg" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-         <td><img src="assets\images\khalil.jfif" alt="Ermias Asmare Profile image" wedith = "450" height="350">&nbsp;&nbsp;&nbsp;&nbsp;</td> 
-        </tr>
- 
-     </table>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-10" style="display: block; padding-top: 30px;">
+                        <img src="assets\images\basket.jpeg" alt="Ermias Asmare Profile image">
+                        <img src="assets\images\food1.jpeg" alt="Ermias Asmare Profile image" >
+                        <img src="assets\images\football.jpeg" alt="Ermias Asmare Profile image">
+                        <img src="assets\images\boxing.jpeg" alt="Ermias Asmare Profile image" >
+                        <img src="assets\images\skate.jpeg" alt="Ermias Asmare Profile image" >
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 5px;"> 
+                <div class="col-sm-2 "></div>
+
+                <div class="col-sm-10" style="padding-left: 225px;">
+                    <img src="assets\images\p6.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\p7.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\p8.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\p12.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\m1.jpg" alt="Ermias Asmare Profile image" > 
+                </div>
+
+            </div>
+
+            <div class="row" style="padding-top: 5px;" > 
+                <div class="col-sm-2 ">
+                  
+                </div>
+                <div class="col-sm-10" style="padding-left: 225px;">
+                    <img src="assets\images\i3.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\i4.jpg" alt="Ermias Asmare Profile image" > 
+                    <img src="assets\images\i6.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\i7.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\i8.jpg" alt="Ermias Asmare Profile image" >
+                            
+                </div>
+
+            </div>
+            <div class="row" style="padding-top: 5px;" > 
+                <div class="col-sm-2 ">
+                </div>
+                <div class="col-sm-10" style="padding-left: 225px;">
+                    <img src="assets\images\20200220_184231.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\20200220_184240.jpg" alt="Ermias Asmare Profile image" > 
+                    <img src="assets\images\profile.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\the_alchemist.jpg" alt="Ermias Asmare Profile image" >
+                    <img src="assets\images\passenger-let-her-go.jpg" alt="Ermias Asmare Profile image" >
+                            
+                </div>
+
+            </div>
+
+            <div class="row" style="padding-top: 5px;"> 
+                <div class="col-sm-2 ">
+                    <tr>
+                        <p> Copyright © Ermias Asmare, All rights reserved. </p> 
+                    </tr>
+                </div>
+                <div class="col-sm-10" style="padding-left: 225px;">                    
+                </div>
+
+            </div>
+        </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
