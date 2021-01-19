@@ -14,7 +14,7 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            padding: 2px 0 0 0;
+            padding: 2px 0 0 30;
             overflow: hidden;
         }
         .li{
@@ -33,8 +33,7 @@
         img{
             object-fit: cover;
             }
-        ul li a {
-            
+        ul li a { 
             color: rgb(148, 145, 145);
         }
         ul li a:hover{
@@ -72,91 +71,98 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-sm-2 position-fixed d-flex flex-column  allign-items-end h-100" id="sticky sidebar">
                 <div>
-                <img src="assets\images\junior ermi.PNG" alt="Ermias name">
-                </div>
-            
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a href="index.html">OverView</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Hobbies.html"> Hobbies</a>  
-                    </li>
-                    <li class="nav-item">
-                        <a href="photography.html"> Photography</a>  
-                    </li>
-                    <li class="nav-item">
-                    <a href="about.html">About</a>  
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html"> Contact</a>
-
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-6" style="display: block; padding-top: 30px;">
+                    <div>
+                        <img src="assets\images\junior ermi.PNG" alt="Ermias name">
+                    </div>
                 
-                    <div class="card">
-                        <div class="card-header">
-                          <h1 style="text-align: center;"> Contact Me </h1>
-                        </div>
-                        <div class="card-body">
-                            <form>
-                                <div class="row">
-                                  <div class="col">
-                                    <input type="text" class="form-control" placeholder="First name">
-                                  </div>
-                                  <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last name">
-                                  </div>
-                                </div>
-                                <div class="row" style="padding: 30px 0;">
-                                    <div class="col">
-                                      <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="row" style="padding: 10px 0 ;">
-                                    <div class="col">
-                                        <label for="body">Comment</label>
-                                        <textarea name="Comment" id="body" cols="95" rows="5" style="resize:none;"></textarea>
-                                    </div>
-                                   
-                                </div>
-                                
-                              </form>
-                      </div>
-                      <div class="card-footer"> 
-                        <button type="submit" style="float: right;">Send</button>
-                      </div>
-                    </div>      
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="index.html">OverView</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Hobbies.html"> Hobbies</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a href="photography.html"> Photography</a>  
+                        </li>
+                        <li class="nav-item">
+                        <a href="about.html">About</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html"> Contact</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <p> Copyright © Ermias Asmare, All rights reserved.</p> 
+                </div>
             </div>
-            <div class="col-sm-4" style="display: block; padding-top: 30px;">
-                <ul style="list-style: none;" style="padding-top: 100px;">
-                    <li class="li">
-                        <i class="fa fa-facebook fa-2x"> Ermias Asmare </i>
-                    </li>
-                    <li class="li">
-                        <i class="fa fa-instagram fa-2x"> jrermi</i>
-                    </li>
-                    <li class="li">
-                        <i class="fa fa-telegram fa-2x"> @Jrermi</i>
-                    </li>
-                    <li class="li">
-                        <i class="fa fa-youtube fa-2x"> JrTube </i>
-                    </li>
-                    <li class="li">
-                         <i class="fa fa-phone fa-2x"> +251909042168 </i>
-                    </li>
-                    <li class="li">
-                         <i class="fa fa-envelope fa-2x"> ermi@gmail.com</i>
-    
-                    </li>
+            <div class="col-sm-10 offset-2" style="display: block; padding-top: 30px;">
+                <div class="row">
+                    <div class="col-sm-6" style="display: block; padding-top: 30px;">
+                        <div class="card">
+                            <div class="card-header">
+                              <h1 style="text-align: center;"> Contact Me </h1>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                      <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name">
+                                      </div>
+                                      <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                      </div>
+                                    </div>
+                                    <div class="row" style="padding: 30px 0;">
+                                        <div class="col">
+                                          <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding: 10px 0 ;">
+                                        <div class="col">
+                                            <label for="body">Comment</label>
+                                            <textarea name="Comment" id="body" cols="95" rows="5" style="resize:none;"></textarea>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                  </form>
+                          </div>
+                          <div class="card-footer"> 
+                            <button type="submit" style="float: right;">Send</button>
+                          </div>
+                        </div>      
+                     </div>
+                    <div class="col-sm-4" style="display: block; padding-top: 30px;">
+                        <ul style="list-style: none;" style="padding-top: 100px;">
+                            <li class="li">
+                                <i class="fa fa-facebook fa-2x"> Ermias Asmare </i>
+                            </li>
+                            <li class="li">
+                                <i class="fa fa-instagram fa-2x"> jrermi</i>
+                            </li>
+                            <li class="li">
+                                <i class="fa fa-telegram fa-2x"> @Jrermi</i>
+                            </li>
+                            <li class="li">
+                                <i class="fa fa-youtube fa-2x"> JrTube </i>
+                            </li>
+                            <li class="li">
+                                <i class="fa fa-phone fa-2x"> +251909042168 </i>
+                            </li>
+                            <li class="li">
+                                <i class="fa fa-envelope fa-2x"> ermi@gmail.com</i>
             
-                </ul>
-            </div>                
-        </div>
+                            </li>
+                    
+                        </ul>
+                    </div>        
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
